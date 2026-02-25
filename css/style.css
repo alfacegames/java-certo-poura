@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Langar&display=swap');
+
+h1, label, ul , small {
+    user-select: none;
+}
+
+h1{
+    font-family: "Atma", system-ui;
+    text-align: center;
+    
+}
+
+label{
+    font-family: "Langar", system-ui;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+label::after {
+    content: "🙏";
+    font-size: 14pt;
+}
+
+label::before {
+    content: "🙏";
+    font-size: 14pt;
+}
+
+main{
+    width: 50%;
+    background-color: rgb(110, 184, 110);
+    padding: 5px 20px 30px 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 30px;
+}
+
+small {
+    display: block;
+    color: brown;
+}
+
+button {
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+ul {
+    font-family: "Atma", system-ui;
+}
+
+input, select {
+    font-size: 12pt;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#box-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+body{
+    background: #0d3b15;
+    background: linear-gradient(90deg,
+    rgba(13, 59, 21, 1) 0%,
+    rgba(87, 199, 133, 1) 44%,
+    rgba(78, 194, 52, 1) 88%);
+}
+
+@media (max-width: 800px) and (min-width:600px){
+    main{
+        width: 90%;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    body {
+        background: none;
+        background-color: rgb(110, 184, 110);       
+    }
+}
