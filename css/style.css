@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Langar&display=swap');
 
-h1, label, ul , small {
+h1, label, ul , small{
     user-select: none;
 }
 
